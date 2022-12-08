@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>panicFunction</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="panic">
+			<input type="text" placeholder="Eanter your name">
+			<button>click Me</button>
+			<p id="demo"></p>
+		</div>
+	</div>
+
+	<script>
+
+		let inp = document.querySelector("input");
+		let btn = document.querySelector("button");
+		let para = document.querySelector("p");
+		
+
+		btn.onclick=(input)=>{
+			let con = inp.value.toUpperCase()+"!";
+
+			let name = con.split(' ').join(" 😂 ");
+			para.innerHTML = name
+		}
+			
+			
+			
+		// }
+		// btn.onclick = ()=>{
+		// 	panic()
+		// }
+
+
+			// let text = " hello ";
+			// let result = text.toUpperCase();
+
+			// document.getElementById("demo").innerHTML = result;
+		 
+			// console.log(text.toUpperCase())
+
+
+	</script>
+	
+</body>
+</html>
